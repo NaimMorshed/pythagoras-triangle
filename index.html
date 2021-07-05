@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pythagoras</title>
+</head>
+
+<body>
+    <div class="container-left">
+        <h4 class="hypo">a = <span id="a">0</span></h4>
+        <h4 class="base">b = <span id="b">0</span></h4>
+        <h4 class="height">c = <span id="c">0</span></h4>
+        <h1 class="pythagoras">Pythagoras Triangle</h1>
+        <div class="triangle"></div>
+    </div>
+    <div class="container-right">
+        <section class="section-top">
+            <h2>Enter any two values</h2>
+        </section>
+        <section class="section-middle">
+            <div id="left">
+                <div>
+                    <p>Hypotenuse, a :</p>
+                    <p>Base, b :</p>
+                    <p>Height, c :</p>
+                </div>
+            </div>
+            <div id="right">
+                <input onChange="inputA()" value="0" type="number" id="input-a">
+                <input onChange="inputB()" value="0" type="number" id="input-b">
+                <input onChange="inputC()" value="0" type="number" id="input-c">
+            </div>
+        </section>
+        <section class="section-bottom">
+            <button onClick="clearAll()">RESET</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

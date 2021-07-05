@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Otomanopee One', sans-serif;
+}
+body {
+    display: flex;
+}
+.container-left, .section-top, .section-middle, .section-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+.container-left {
+    position: relative;
+    background-color: #fbb12f;
+    height: 100vh;
+}
+.container-right {
+    height: 100vh;
+    width: 50vw;
+}
+.section-top {
+    height: 15vh;
+}
+.section-middle {
+    height: 70vh;
+}
+.section-bottom {
+    height: 15vh;
+}
+.triangle {
+    height: 0;
+    width: 0;
+    border-bottom: 200px solid white;
+    border-left: 200px solid transparent;
+    /* position: absolute;
+    top: 38%;
+    left: 60%; */
+}
+h2 {
+    border-bottom: 5px solid #fbb12f;
+    padding: 5px 10px;
+}
+.hypo, .base, .height {
+    position: absolute;
+}
+.hypo {
+    top: 50%;
+    left: 67%;
+    transform: rotate(-45deg);
+}
+.base {
+    top: 62%;
+    left: 73%;
+}
+.height {
+    top: 50%;
+    left: 86.5%;
+    transform: rotate(90deg);
+}
+input {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+#left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+p {
+    text-align: right;
+    margin: 28px 0;
+}
+#right {
+    flex: 1;
+    justify-content: flex-start
+}
+button {
+    background-color: #fbb12f;
+    border: 3px solid #ffa200;
+    padding: 15px 35px;
+}
+button:hover {
+    background-color: #ffa200;
+    cursor: pointer;
+}
+/* .pythagoras {
+    position: absolute;
+    top: 47.3%;
+    left: 12.1%;
+} */
